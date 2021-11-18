@@ -1,0 +1,209 @@
+/* Reset CSS */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:60px;
+}
+
+/* Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+/* Navigation Bar : Logo and Images */
+#logo{
+    margin: 5px 30px;
+}
+#logo img{
+    height: 60px;
+    margin: 10px;
+}
+/* Navigation Bar : List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;   
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 20px;
+}
+#navbar ul li a{
+    display: block;
+    padding: 5px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color: white ;
+    cursor: pointer;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    padding: 0px 250px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    background:url("https://cdn.pixabay.com/photo/2017/06/06/22/37/italian-cuisine-2378729__340.jpg") no-repeat center center/cover;
+    height: 78%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;   
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/* Services Section */
+#services{
+    /* margin: 20px; */
+    display: flex;
+}
+#services .box{
+    margin: 60px 10px;
+    border: 2px solid maroon;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(236, 222, 222);
+    box-shadow: 4px 4px rgb(190, 46, 46), 6px 6px rgb(202, 89, 89);
+
+
+}
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+.client-item{
+    padding: 34px;
+}
+/* Clients Section */
+#client-section{
+    height: 100px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2017/10/22/20/42/table-2879213_960_720.jpg")no-repeat center center/cover;
+    width: 100%;    
+    height: 30%;
+    z-index: -1;
+    opacity: 0.2;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 100px;
+}
+
+/* Contact Us */
+#contact{
+    position: relative;
+    margin-top: 100px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url("https://cdn.pixabay.com/photo/2019/05/10/14/23/contact-us-4193637__340.jpg")no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px black;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px 25px;
+
+}
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    padding: 1px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    padding: 10px;
+    font-size: 1.6rem;
+}
+.btn{
+    padding: 6px 10px;
+    border: 2px solid white;
+    background-color: maroon;
+    color: white;
+    margin: 10px 10px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
